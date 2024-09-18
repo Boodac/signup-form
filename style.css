@@ -8,6 +8,8 @@
   body {
     display: flex;
     height: 100vh;
+    font-size: 1.2em;
+    font-family: sans-serif;
   }
 
   .logo-banner {
@@ -15,7 +17,7 @@
     background-color: rgba(0,0,0,0.2);
     align-items: center;
     justify-content: center;
-    padding: 0.125rem 0;
+    padding: 0.5rem 0;
     color: white;
     font-size: 4rem;
     gap: 1rem;
@@ -23,8 +25,8 @@
   }
 
   .logo {
-    max-width: 50px;
-    aspect-ratio: 313/418;
+    max-width: 100px;
+    /* aspect-ratio: 313/418; this is the TOP logo's aspect ratio */
   }
 
   main, aside {
@@ -36,21 +38,49 @@
   header, section {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 4rem;
   }
 
-  label, input {
-    margin-top: 0.5em;
+  label {
+    margin-top: 2em;
+    font-size: 0.8em;
   }
+
+  input {
+    width: 30ch;
+    border: 1px solid #E5E7EB;
+  }
+
+  input:active {
+    outline: 4px solid #094878;
+  }
+
+  input:focus {
+    outline: 2px solid #094878;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  p {
+    max-width: 66ch;
+    margin-top: 1rem;
+  }
+
+  h1 {
+    font-family: serif;
+  }
+
   .form-row {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
   }
 
+  label::before{
+    content: "*";
+  }
+
   .column-wrapper {
-    padding-left: 1rem;
-    width: 50%;
+    width: 40vw;
   }
 
   .form {
@@ -61,7 +91,7 @@
     background-image: url("splash-biggest.jpeg");
     width: 25vw;
     background-size: cover;
-    font-family: "Protest Guerrilla", sans-serif;
+    font-family: "Protest Guerrilla";
     font-weight: 400;
     font-style: normal;
     gap: 
@@ -81,22 +111,32 @@
 
   a {
     text-decoration: none;
-    color: inherit;
+    color: #ccc;
   }
 
   a:hover {
-    color: inherit;
+    text-decoration: underline;
   }
 
   button {
     flex-grow: 0;
-    padding: 1em 1em;
+    padding: 0.5em 2em;
     border: 0.125rem solid #fcdbd6;
-    border-radius: 1em;
-    width: 20ch;
+    border-radius: 0.5em;
+    width: 24ch;
     color: white;
     font-size: 1.5rem;
     background-color: #094878;
-    font-weight: 1000;
+    font-weight: 900;
     outline: 0.125rem solid #894878;
+  }
+
+  .alternative {
+    font-size: 1em;
+    padding-top: 1rem;
+    color: #777;
+  }
+
+  .alternative a {
+    color: #444;
   }
