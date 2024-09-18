@@ -88,7 +88,7 @@
   }
 
   .sidebar {
-    background-image: url("/signup-form/splash-biggest.jpeg");
+    background-image: url("splash-biggest.jpeg");
     width: 25vw;
     background-size: cover;
     font-family: "Protest Guerrilla";
